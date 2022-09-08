@@ -20,8 +20,8 @@ for filo in os.listdir(u"C:\\ESMA_BCKPS"):
             zfile = zipobj.write(nfile,os.path.basename(nfile),zipfile.ZIP_DEFLATED)
             zipobj.close()
             shutil.move(os.path.join(dirpath, filo), os.path.join(dest, filo))
-aws_access_key_id='AKIAIRH7ERPILCJDIHHA'
-aws_secret_access_key='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'
+aws_access_key_id='xxxxxxxxxxxxxxxxxxxxxx'
+aws_secret_access_key='xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx'
 conn =boto.connect_s3(aws_access_key_id,aws_secret_access_key,debug=2)
 #conn = connect_to_region(Location.EU,aws_access_key_id=aws_access_key_id,aws_secret_access_key=aws_secret_access_key)
 #bucket = conn.get_bucket("elpho")
